@@ -106,3 +106,12 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+
+
+API key retrieved from: https://ci-jshint.herokuapp.com/
+API key - 456_2kfoPbi7Aw_kPQ3LOt2nZ3Y
+expires 10th June 2023
+Check validity of API key - https://ci-jshint.herokuapp.com/api?api_key=456_2kfoPbi7Aw_kPQ3LOt2nZ3Y
+
