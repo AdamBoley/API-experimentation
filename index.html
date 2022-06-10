@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+
+    </div>
+
+    <script>
+        fetch("https://ci-swapi.herokuapp.com/api/") // the fetch method is used to state the resource that we want to go to
+        .then(response => response.json()) //the first .then() method is used to specify how we want the retrieved data to be displayed or handled. 
+        //use the .text() method to display in plain text, or the .json() method to handle the data as a manipulatable JS Object
+        .then(data => displayData(data))
+             //The second .then() method specifies where the data to be posted to, in this case the div with an id of content
+            //If using .json() method above, the data keyword represents a JS Object, which can be accessed
+            //appending .people, .vehicles or .starships allows further access of the keys
+        
+        .catch((e) => {
+            console.error('Error', e) //the .catch() method is used to handle errors. Here, e is used for errors, and the error will be logged to the console
+            //console.error works just like console.log, it is just used for more serious errors and warnings
+        })
+
+        function displayData(data) {
+            document.getElementById('content').innerText = data
+        }
+        //This format, with a named function handling the displaying of the data is preferred
+        //The outcome is the same
+    </script>
+</body>
+</html>
