@@ -115,3 +115,7 @@ API key - 456_2kfoPbi7Aw_kPQ3LOt2nZ3Y
 expires 10th June 2023
 Check validity of API key - https://ci-jshint.herokuapp.com/api?api_key=456_2kfoPbi7Aw_kPQ3LOt2nZ3Y
 
+This project uses the CI JSHINT API to check JS code integrity
+
+
+
